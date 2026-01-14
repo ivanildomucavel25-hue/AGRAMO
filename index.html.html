@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AGRAMO - Associação Agro-Ambiental de Moçambique</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f7f4;
+            color: #333;
+        }
+        header {
+            background-color: #2e7d32;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+        nav {
+            background-color: #1b5e20;
+            padding: 10px;
+            text-align: center;
+        }
+        nav a {
+            color: white;
+            margin: 0 10px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        .lang-switch {
+            text-align: right;
+            padding: 10px;
+            font-size: 14px;
+        }
+        .container {
+            max-width: 1000px;
+            margin: auto;
+            padding: 20px;
+        }
+        h2 {
+            color: #2e7d32;
+        }
+        footer {
+            background-color: #1b5e20;
+            color: white;
+            text-align: center;
+            padding: 15px;
+            font-size: 14px;
+        }
+        .en { display: none; }
+    </style>
+
+    <script>
+        function switchLang(lang) {
+            document.querySelectorAll('.pt').forEach(e => e.style.display = lang === 'pt' ? 'block' : 'none');
+            document.querySelectorAll('.en').forEach(e => e.style.display = lang === 'en' ? 'block' : 'none');
+        }
+    </script>
+</head>
+<body>
+
+<header>
+    <h1>AGRAMO</h1>
+    <p>Associação Agro-Ambiental de Moçambique</p>
+</header>
+
+<div class="lang-switch">
+    <button onclick="switchLang('pt')">Português</button> |
+    <button onclick="switchLang('en')">English</button>
+</div>
+
+<nav>
+    <a href="#sobre">Sobre / About</a>
+    <a href="#servicos">Serviços / Services</a>
+    <a href="#contactos">Contactos / Contacts</a>
+</nav>
+
+<div class="container">
+
+<section id="sobre">
+    <div class="pt">
+        <h2>Sobre a AGRAMO</h2>
+        <p>A AGRAMO é uma associação que promove o desenvolvimento sócio-económico das comunidades rurais através da agricultura sustentável, gestão ambiental e educação comunitária.</p>
+    </div>
+    <div class="en">
+        <h2>About AGRAMO</h2>
+        <p>AGRAMO is an association that promotes the socio-economic development of rural communities through sustainable agriculture, environmental management and community education.</p>
+    </div>
+</section>
+
+<section id="servicos">
+    <div class="pt">
+        <h2>Serviços e Objectivos</h2>
+        <ul>
+            <li>Desenvolvimento agrícola sustentável</li>
+            <li>Gestão ambiental comunitária</li>
+            <li>Segurança alimentar</li>
+            <li>Investigação agrícola e ambiental</li>
+            <li>Equidade de género</li>
+            <li>Educação comunitária</li>
+            <li>Assistência humanitária</li>
+        </ul>
+    </div>
+
+    <div class="en">
+        <h2>Services and Objectives</h2>
+        <ul>
+            <li>Sustainable agricultural development</li>
+            <li>Community environmental management</li>
+            <li>Food security</li>
+            <li>Agricultural and environmental research</li>
+            <li>Gender equity</li>
+            <li>Community education</li>
+            <li>Humanitarian assistance</li>
+        </ul>
+    </div>
+</section>
+
+<section id="contactos">
+    <div class="pt">
+        <h2>Contactos</h2>
+        <p>Email: info@agramo.org<br>Telefone: +258 ___ ___ ___<br>Moçambique</p>
+    </div>
+    <div class="en">
+        <h2>Contacts</h2>
+        <p>Email: info@agramo.org<br>Phone: +258 ___ ___ ___<br>Mozambique</p>
+    </div>
+</section>
+
+</div>
+
+<footer>
+    <p>&copy; 2026 AGRAMO - Associação Agro-Ambiental de Moçambique</p>
+</footer>
+
+</body>
+</html>
